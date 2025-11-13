@@ -2,6 +2,16 @@
 
 All notable changes to the Dummy Extension will be documented in this file.
 
+## [1.3.1] - 2025-11-13
+
+### Fixed
+- **Autoload Configuration**: Added database/seeders to PSR-4 autoload for proper seeder class loading
+- Fixed issue where DemoSeeder class was not being found during installation
+
+### Technical
+- Updated composer.json autoload section to include seeders namespace
+- Seeders now properly registered and executable via ExtensionManager
+
 ## [1.3.0] - 2025-11-13
 
 ### Added
