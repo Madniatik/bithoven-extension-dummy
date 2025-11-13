@@ -34,7 +34,7 @@ class DummyServiceProvider extends ServiceProvider
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'dummy');
 
         // Register anonymous Blade components
-        Blade::anonymousComponentPath(__DIR__.'/../resources/views/layouts', 'dummy');
+        Blade::anonymousComponentPath(__DIR__.'/../resources/views/components', 'dummy');
 
         // Publish config
         $this->publishes([
