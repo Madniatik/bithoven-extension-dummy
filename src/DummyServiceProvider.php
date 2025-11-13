@@ -3,6 +3,7 @@
 namespace Bithoven\Dummy;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\Blade;
 
 class DummyServiceProvider extends ServiceProvider
 {
@@ -31,6 +32,9 @@ class DummyServiceProvider extends ServiceProvider
 
         // Load views
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'dummy');
+
+        // Register anonymous Blade components
+        Blade::anonymousComponentPath(__DIR__.'/../resources/views/layouts', 'dummy');
 
         // Publish config
         $this->publishes([
