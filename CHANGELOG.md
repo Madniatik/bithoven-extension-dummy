@@ -2,6 +2,20 @@
 
 All notable changes to the Dummy Extension will be documented in this file.
 
+## [1.2.1] - 2025-11-13
+
+### Fixed
+- **Livewire Duplicate Submission**: Prevent duplicate form submissions with Livewire
+- Event delegation implementation to avoid multiple event listener registration
+- Added initialization guard with `window.dummyItemsInitialized`
+- Submit button disabled during processing
+- Modal marked with `wire:ignore.self` for Livewire compatibility
+
+### Technical
+- Replaced direct event listeners with event delegation pattern
+- Fixed issue where Livewire navigation caused multiple event registrations
+- Improved form submission handling with proper state management
+
 ## [1.2.0] - 2025-11-13
 
 ### Added
