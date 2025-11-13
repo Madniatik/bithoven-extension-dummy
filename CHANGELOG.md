@@ -2,6 +2,20 @@
 
 All notable changes to the Dummy Extension will be documented in this file.
 
+## [1.3.0] - 2025-11-13
+
+### Added
+- **Demo Seeders**: Implemented demo data seeders for quick testing
+- `DummyDemoSeeder` - Creates 10 sample items with varied categories and priorities
+- `DemoSeeder` - Main seeder class that orchestrates demo data creation
+- Seeders can be run during installation via "Run demo seeders" option
+
+### Features
+- Sample items showcase all categories (general, important, technical, urgent)
+- All priority levels represented (low, normal, high, critical)
+- Realistic demo data for testing and demonstrations
+- Automatic creation of 10 demo items when enabled during install
+
 ## [1.2.1] - 2025-11-13
 
 ### Fixed
