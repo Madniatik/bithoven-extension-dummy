@@ -2,6 +2,26 @@
 
 All notable changes to the Dummy Extension will be documented in this file.
 
+## [1.4.0] - 2025-11-14
+
+### Added
+- **Rollback Testing**: Intentional migration failure for testing automatic rollback functionality
+- Migration `2025_11_14_000001_intentional_failure_for_rollback_test.php`
+
+### Purpose
+This version is specifically designed to test the automatic rollback functionality of the Extension Manager. When updating from v1.3.1 to v1.4.0, the migration will fail intentionally, triggering the rollback mechanism.
+
+### Expected Behavior
+1. User updates from v1.3.1 to v1.4.0
+2. Migration fails with: "Intentional migration failure for rollback testing"
+3. System automatically:
+   - Rolls back the failed migration
+   - Restores extension from automatic backup
+   - Reverts to v1.3.1
+   - Preserves all user data
+
+⚠️ **Warning**: This version will ALWAYS fail during installation/update. Only use for testing rollback functionality.
+
 ## [1.3.1] - 2025-11-13
 
 ### Fixed
