@@ -1,6 +1,25 @@
 # Changelog
 
-All notable changes to the Bithoven Dummy extension will be documented in this file.
+All notable changes to the Dummy Extension will be documented in this file.
+
+## [1.2.0] - 2025-11-13
+
+### Added
+- **Priority System**: New priority field for items (low, normal, high, critical)
+- Priority badges with color coding (info, primary, warning, danger)
+- Priority selector in create/edit forms
+- Database migration for priority column with index
+
+### Improved
+- Enhanced items table with priority column
+- Better visual hierarchy with priority color coding
+- Improved data organization capabilities
+
+### Technical
+- **Migration**: `add_priority_to_dummy_items` (ALTER TABLE with ENUM and index)
+- Updated model fillable attributes
+- Enhanced validation in DummyController (store/update methods)
+- UI updates with priority badges and selector
 
 ## [1.1.0] - 2025-11-13
 

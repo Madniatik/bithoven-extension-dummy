@@ -20,6 +20,7 @@ class DummyController extends Controller
         $validated = $request->validate([
             'name' => 'required|string|max:255',
             'category' => 'required|in:general,important,archived',
+            'priority' => 'required|in:low,normal,high,critical',
             'description' => 'nullable|string',
             'status' => 'required|in:active,inactive',
             'order' => 'required|integer|min:0',
@@ -39,6 +40,7 @@ class DummyController extends Controller
         $validated = $request->validate([
             'name' => 'required|string|max:255',
             'category' => 'required|in:general,important,archived',
+            'priority' => 'required|in:low,normal,high,critical',
             'description' => 'nullable|string',
             'status' => 'required|in:active,inactive',
             'order' => 'required|integer|min:0',

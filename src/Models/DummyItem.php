@@ -13,6 +13,7 @@ class DummyItem extends Model
     protected $fillable = [
         'name',
         'category',
+        'priority',
         'description',
         'status',
         'order',

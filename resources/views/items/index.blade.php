@@ -42,6 +42,7 @@
                             <tr class="text-start text-muted fw-bold fs-7 text-uppercase gs-0">
                                 <th class="min-w-125px">Name</th>
                                 <th class="min-w-100px">Category</th>
+                                <th class="min-w-100px">Priority</th>
                                 <th class="min-w-125px">Description</th>
                                 <th class="min-w-100px">Status</th>
                                 <th class="min-w-100px">Order</th>
@@ -69,6 +70,19 @@
                                     </td>
                                     <td>
                                         <span class="badge badge-light">{{ ucfirst($item->category) }}</span>
+                                    </td>
+                                    <td>
+                                        @php
+                                            $priorityColors = [
+                                                'low' => 'badge-light-info',
+                                                'normal' => 'badge-light-primary',
+                                                'high' => 'badge-light-warning',
+                                                'critical' => 'badge-light-danger'
+                                            ];
+                                        @endphp
+                                        <span class="badge {{ $priorityColors[$item->priority] ?? 'badge-light' }}">
+                                            {{ ucfirst($item->priority) }}
+                                        </span>
                                     </td>
                                     <td>{{ Str::limit($item->description, 50) ?: '-' }}</td>
                                     <td>
@@ -140,6 +154,15 @@
                                 <option value="general">General</option>
                                 <option value="important">Important</option>
                                 <option value="archived">Archived</option>
+                            </select>
+                        </div>
+                        <div class="mb-5">
+                            <label class="required form-label">Priority</label>
+                            <select name="priority" class="form-select" required>
+                                <option value="low">Low</option>
+                                <option value="normal" selected>Normal</option>
+                                <option value="high">High</option>
+                                <option value="critical">Critical</option>
                             </select>
                         </div>
                         <div class="mb-5">
