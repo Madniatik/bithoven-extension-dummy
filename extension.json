@@ -1,6 +1,6 @@
 {
   "name": "dummy",
-  "version": "1.4.0",
+  "version": "1.4.2",
   "description": "Dummy extension for development and testing purposes",
   "migrations": {
     "required": true,
@@ -9,7 +9,7 @@
     "details": [
       "2025_11_14_000004_add_status_to_dummy_items"
     ],
-    "description": "Adds status tracking system with workflow states"
+    "description": "Modifies status column from STRING to ENUM with workflow states"
   },
   "breaking_changes": false,
   "min_version": "1.3.0",
@@ -17,6 +17,17 @@
     "bithoven/core": "^1.0"
   },
   "changelog": {
+    "v1.4.2": {
+      "date": "2025-11-14",
+      "changes": [
+        "Fixed: Migration now properly handles existing status column",
+        "Drops old STRING status column",
+        "Creates new ENUM status column with workflow states",
+        "Proper rollback support to restore STRING column"
+      ],
+      "migration_notes": "⚠️ This update modifies the existing status column. A backup will be created automatically before updating.",
+      "breaking_changes": false
+    },
     "v1.4.0": {
       "date": "2025-11-14",
       "changes": [
