@@ -14,7 +14,7 @@ class AboutController extends Controller
             'version' => '1.1.0',
             'author' => 'Bithoven Team',
             'license' => 'MIT',
-            'repository' => 'https://github.com/Madniatik/bithoven-dummy',
+            'repository' => 'https://github.com/Madniatik/bithoven-extension-dummy',
             'php_version' => PHP_VERSION,
             'laravel_version' => app()->version(),
         ];

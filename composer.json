@@ -33,8 +33,8 @@
             "version": "1.4.2",
             "author": "Bithoven Team",
             "dependencies": [],
-            "repository": "https://github.com/Madniatik/bithoven-dummy",
-            "homepage": "https://github.com/Madniatik/bithoven-dummy"
+            "repository": "https://github.com/Madniatik/bithoven-extension-dummy",
+            "homepage": "https://github.com/Madniatik/bithoven-extension-dummy"
         }
     }
 }

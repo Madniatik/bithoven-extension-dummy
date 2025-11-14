@@ -25,7 +25,7 @@ This extension serves as:
 # Add to composer.json repositories
 {
     "type": "path",
-    "url": "../EXTENSIONS/bithoven-dummy"
+    "url": "../EXTENSIONS/bithoven-extension-dummy"
 }
 
 # Install via composer
@@ -82,7 +82,7 @@ php artisan bithoven:extension:uninstall dummy
 ## Structure
 
 ```
-bithoven-dummy/
+bithoven-extension-dummy/
 ├── config/
 │   └── dummy.php           # Configuration file
 ├── database/
@@ -173,5 +173,5 @@ MIT License - See LICENSE file for details
 ## Support
 
 For issues or questions:
-- GitHub: https://github.com/Madniatik/bithoven-dummy
+- GitHub: https://github.com/Madniatik/bithoven-extension-dummy
 - Email: dev@bithoven.com
