@@ -2,7 +2,7 @@
 
 ## ✅ Estado Actual
 
-La extensión **bithoven-dummy** está completamente funcional y lista para desarrollo y testing.
+La extensión **bithoven-extension-dummy** está completamente funcional y lista para desarrollo y testing.
 
 ```bash
 ✅ 8/8 tests pasaron
@@ -112,7 +112,7 @@ php tests/quick-test.php
 
 ### Test Rápido (8 tests)
 ```bash
-cd /Users/madniatik/CODE/LARAVEL/BITHOVEN/EXTENSIONS/bithoven-dummy
+cd /Users/madniatik/CODE/LARAVEL/BITHOVEN/EXTENSIONS/bithoven-extension-dummy
 php tests/quick-test.php
 ```
 
@@ -129,7 +129,7 @@ php tests/quick-test.php
 ## 📦 Estructura de Archivos
 
 ```
-bithoven-dummy/
+bithoven-extension-dummy/
 ├── composer.json              # Metadata y autoload
 ├── CHANGELOG.md              # Historial de versiones
 ├── README.md                 # Documentación completa

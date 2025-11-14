@@ -91,10 +91,10 @@ Seed demo data to speed up development:
 - Demo data uses realistic business scenarios for better context
 
 ## 🔗 Links
-- **Repository**: https://github.com/Madniatik/bithoven-dummy
-- **Issues**: https://github.com/Madniatik/bithoven-dummy/issues
-- **Previous Release**: [v1.2.1](https://github.com/Madniatik/bithoven-dummy/releases/tag/v1.2.1)
+- **Repository**: https://github.com/Madniatik/bithoven-extension-dummy
+- **Issues**: https://github.com/Madniatik/bithoven-extension-dummy/issues
+- **Previous Release**: [v1.2.1](https://github.com/Madniatik/bithoven-extension-dummy/releases/tag/v1.2.1)
 
 ---
 
-**Full Changelog**: https://github.com/Madniatik/bithoven-dummy/compare/v1.2.1...v1.3.0
+**Full Changelog**: https://github.com/Madniatik/bithoven-extension-dummy/compare/v1.2.1...v1.3.0
