@@ -2,6 +2,26 @@
 
 All notable changes to the Dummy Extension will be documented in this file.
 
+## [1.4.4] - 2025-11-14
+
+### Added
+- **Notes Field**: New optional notes field for dummy items
+  - Text field for additional item information
+  - Nullable (optional)
+  - Placed after description field
+
+### Database
+- **Migration Required**: `add_notes_to_dummy_items` migration
+- Adds `notes` text column to `dummy_items` table
+- ⚠️ **This update requires running migrations**
+- Automatic backup will be created before update
+
+### Testing
+- Test case for successful update with valid migrations
+- Verifies migration execution and field availability
+
+---
+
 ## [1.4.0] - 2025-11-14
 
 ### Added

@@ -1,15 +1,15 @@
 {
   "name": "dummy",
-  "version": "1.4.2",
+  "version": "1.4.4",
   "description": "Dummy extension for development and testing purposes",
   "migrations": {
     "required": true,
     "count": 1,
     "can_skip": false,
     "details": [
-      "2025_11_14_000004_add_status_to_dummy_items"
+      "2025_11_14_000006_add_notes_to_dummy_items"
     ],
-    "description": "Modifies status column from STRING to ENUM with workflow states"
+    "description": "Adds notes text field to dummy_items table"
   },
   "breaking_changes": false,
   "min_version": "1.3.0",
@@ -17,6 +17,17 @@
     "bithoven/core": "^1.0"
   },
   "changelog": {
+    "v1.4.4": {
+      "date": "2025-11-14",
+      "changes": [
+        "Added notes field to dummy items",
+        "Text field for additional item information",
+        "Nullable (optional field)",
+        "Placed after description field"
+      ],
+      "migration_notes": "⚠️ This update adds a notes field. A backup will be created automatically before updating.",
+      "breaking_changes": false
+    },
     "v1.4.2": {
       "date": "2025-11-14",
       "changes": [
