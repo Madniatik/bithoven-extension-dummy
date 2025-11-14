@@ -2,6 +2,27 @@
 
 All notable changes to the Dummy Extension will be documented in this file.
 
+## [1.4.6] - 2025-11-14
+
+### Added
+- **Tags Field**: New optional JSON field for item tags
+  - JSON array for flexible tag storage
+  - Nullable (optional)
+  - Placed after notes field
+
+### Database
+- **Migration Available**: `add_tags_to_dummy_items` migration
+- Adds `tags` json column to `dummy_items` table
+- ⚠️ **Migration can be skipped** - Test case for optional migration execution
+- If skipped, field will not be available until migration is run manually
+
+### Testing
+- Test case for update with skip migrations option
+- Verifies code updates without executing migrations
+- Field availability depends on migration execution
+
+---
+
 ## [1.4.5] - 2025-11-14
 
 ### Changed
