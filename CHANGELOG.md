@@ -2,6 +2,37 @@
 
 All notable changes to the Dummy Extension will be documented in this file.
 
+## [1.4.3] - 2025-11-14
+
+### Testing
+- **Rollback Test Version**: This version intentionally fails during migration to test the rollback mechanism
+- ⚠️ **DO NOT USE IN PRODUCTION** - This is a test release only
+- Migration `2025_11_14_000005_test_rollback_failure` throws an exception to trigger rollback
+- Used to validate that the extension update system properly rolls back failed updates
+- Verifies that database backups are restored correctly
+- Confirms that the system returns to previous version (v1.4.2) after failure
+
+### Purpose
+- Test automatic rollback on migration failure
+- Validate backup/restore functionality
+- Ensure system stability after failed updates
+- Verify error messaging to users
+
+### Expected Behavior
+When updating to this version:
+1. ✅ Backup created automatically (database, config, views)
+2. ✅ Composer updates to v1.4.3
+3. ❌ Migration fails with exception
+4. ⏮️ System automatically rolls back to v1.4.2
+5. 💾 Database restored from backup
+6. 🔄 Git repository returns to v1.4.2 tag
+7. 📦 Composer downgrades to v1.4.2
+8. ⚠️ User sees error: "Update failed - system rolled back to previous version"
+
+**Note**: This release will be deleted after successful rollback testing.
+
+---
+
 ## [1.4.0] - 2025-11-14
 
 ### Added
