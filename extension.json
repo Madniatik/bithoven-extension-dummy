@@ -1,15 +1,15 @@
 {
   "name": "dummy",
-  "version": "1.4.2",
+  "version": "1.4.3",
   "description": "Dummy extension for development and testing purposes",
   "migrations": {
     "required": true,
     "count": 1,
     "can_skip": false,
     "details": [
-      "2025_11_14_000004_add_status_to_dummy_items"
+      "2025_11_14_000005_test_rollback_failure"
     ],
-    "description": "Modifies status column from STRING to ENUM with workflow states"
+    "description": "⚠️ TESTING ONLY: This migration will fail intentionally to test rollback"
   },
   "breaking_changes": false,
   "min_version": "1.3.0",
