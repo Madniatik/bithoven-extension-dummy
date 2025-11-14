@@ -28,7 +28,8 @@
         "3 migrations executed sequentially"
       ],
       "migration_notes": "⚠️ This update includes 3 migrations that will be executed in order. A backup will be created automatically.",
-      "breaking_changes": false
+      "breaking_changes": false,
+      "components": ["code", "database", "views"]
     },
     "v1.4.6": {
       "date": "2025-11-14",
