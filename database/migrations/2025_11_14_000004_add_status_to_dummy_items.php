@@ -12,6 +12,12 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('dummy_items', function (Blueprint $table) {
+            // Drop old string status column
+            $table->dropColumn('status');
+        });
+        
+        Schema::table('dummy_items', function (Blueprint $table) {
+            // Add new enum status column
             $table->enum('status', ['pending', 'in_progress', 'completed', 'cancelled'])
                   ->default('pending')
                   ->after('priority')
@@ -26,6 +32,11 @@ return new class extends Migration
     {
         Schema::table('dummy_items', function (Blueprint $table) {
             $table->dropColumn('status');
+        });
+        
+        Schema::table('dummy_items', function (Blueprint $table) {
+            // Restore old string status column
+            $table->string('status')->default('active')->after('priority');
         });
     }
 };
