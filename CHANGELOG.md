@@ -2,6 +2,23 @@
 
 All notable changes to the Dummy Extension will be documented in this file.
 
+## [1.6.0] - 2025-11-15
+
+### Improved
+- **UI/UX Enhancement**: Updated extension card layout with improved action button organization
+- Reorganized action buttons for better user experience
+- Moved secondary actions (Reinstall, Demo Data, Backups, Uninstall) to dropdown menu
+- Primary actions (Enable/Disable, Settings, Update) remain prominently visible
+- Cleaner and more professional card design
+
+### Technical
+- Optimized button layout using Bootstrap dropdown component
+- Improved visual hierarchy in extension management interface
+- Better mobile responsiveness with flex-fill classes
+- Separated destructive actions (Uninstall) with visual divider
+
+---
+
 ## [1.4.3] - 2025-11-14
 
 ### Testing
